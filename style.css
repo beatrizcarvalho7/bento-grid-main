@@ -111,9 +111,14 @@ section.posting-schedule{
     padding-bottom: 0;
 }
 
-section.posting-schedule img{
-    width: 75%;
-    margin-top:20px;
+div.trimmed-img {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+div.trimmed-img img {
+    width: 70%;
+    margin-bottom: -22px;
 }
 
 section.posting-schedule h2{
@@ -122,4 +127,89 @@ section.posting-schedule h2{
     font-weight: 600;
     letter-spacing: -1px;
     line-height: 85%;
+}
+
+/* SECTION SCHEDULE TO SOCIAL MEDIA */
+section.schedule {
+    background-color: var(--lightPurple);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.schedule img {
+    max-width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section.schedule h2 {
+    font-size: 24px;
+    font-weight:600;
+    letter-spacing: -1px;
+    line-height: 85%;
+    margin-top: 10px;
+}
+
+section.schedule p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.5px; 
+    margin-bottom: 5px;
+    max-width: 90%;
+}
+
+/* SECTION FOLLOWERS GROWTH */
+section.growth {
+    background-color: var(--darkPurple);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+section.growth img {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    max-width: 225px;
+}
+
+section.growth h2 {
+    max-width: 200px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: -0.5px; 
+}
+
+/* SECTION FASTER GROWTH */
+section.faster-growth {
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+section.faster-growth img{
+    max-width: 175px;
+}
+
+section.faster-growth h2{
+    font-size: 44px;
+    font-weight:600;
+    letter-spacing: -0.5px; 
+}
+
+section.faster-growth p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.5px; 
 }
