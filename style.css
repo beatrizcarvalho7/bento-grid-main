@@ -16,6 +16,7 @@
     padding: 0;
   }
 
+/* Base styles for mobile (375px) */
 body {
     background-color: var(--grey);
     font-family: "DM Sans", sans-serif;
@@ -58,6 +59,7 @@ section.social-media {
     padding-bottom: 35px;
     padding-left: 10px;
     padding-right: 10px;
+    gap: 20px;
 }
 
 section.social-media h1 {
@@ -73,8 +75,6 @@ section.social-media span {
 }
 
 section.social-media img {
-    margin-top: 20px;
-    margin-bottom: 5px;
     width: 55%;
     height: 55%;
 }
@@ -258,10 +258,173 @@ section.write-ai h2 {
     font-weight: 600;
     letter-spacing: -1px; 
     line-height: 1;
-    margin-top: 5px;
 }
 
 section.write-ai img {
     max-width: 225px;
 }
 
+/* Styles for Large Mobile */
+@media (min-width: 425px) {
+    section {
+        width: 90%;
+    }
+}
+
+/* Styles for Tablet */
+@media (min-width: 768px) {
+    section {
+        width: 50%;
+    }
+}
+
+/* Styles for Tablet in Landscape */
+@media (min-width: 1024px) {
+    section {
+        width: 40%;
+    }
+}
+
+/* Styles for Small Laptops */
+@media (min-width: 1280px) {
+    .attribution {
+        padding: 4px 0;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(6, 0.5fr); 
+        gap: 20px; 
+        max-width: 1000px;
+        height: calc(100vh - 60px); 
+        /* Subtrai a altura da .attribution */
+        margin: 0 auto; 
+    }
+
+    section {
+        width: 100%;
+        height: 100%;
+    }
+
+    section.create-content {
+        grid-column: 1 / 2; 
+        grid-row: 1 / 4 ; 
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    section.write-ai {
+        grid-column: 1 / 2; 
+        grid-row: 4 / 7; 
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    section.social-media {
+        grid-column: 2 / span 2;
+        grid-row: 1 / 3; 
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 50px 0px 50px 0px;
+    }  
+
+    section.manage-accounts {
+        grid-column: 2 / 3; 
+        grid-row: 3 / 5; 
+        justify-content: space-evenly;
+        align-items: start;
+        overflow: hidden;
+    }
+
+    section.posting-schedule {
+        grid-column: 3 / 4; 
+        grid-row: 3 / 5; 
+        gap: 40px;
+    }
+
+    section.faster-growth {
+        grid-column: 2 / 3;
+        grid-row: 5 / 7; 
+    }
+
+    section.schedule {
+        grid-column: 4 / 5; 
+        grid-row: 1 / 5; 
+    }
+
+    section.growth {
+        grid-column: 3 / span 2; 
+        grid-row: 5 / 7; 
+        display: flex;
+        flex-direction: row;
+    }
+
+    img:not(section.manage-accounts img, section.social-media img, section.create-content img, section.write-ai img, div.trimmed-img img ){
+        width: 80%;
+    }
+
+    section.create-content h2 {
+        font-size: 36px;
+        font-weight: 500;
+        letter-spacing: -2px; 
+        line-height: 0.9;
+    }
+
+    section.create-content img {
+        max-width: 150px;
+    }
+
+    section.write-ai h2 {
+        font-size: 36px;
+        font-weight: 500;
+        letter-spacing: -2px; 
+        line-height: 0.9;
+        text-wrap: balance;
+    }
+
+    section.write-ai img {
+        width: 80%;
+        height: 60%;
+    }
+    
+    section.social-media h1 {
+        font-size: 52px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -0.5px;
+        max-width: 500px;
+    }
+    
+    section.social-media img {
+        margin-top: 20px;
+        width: 38%;
+        height: 20%;
+    }
+    
+    section.manage-accounts img {
+        max-width: 276px;
+    }
+    
+    section.manage-accounts h2, section.posting-schedule h2{
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: -2px;
+        line-height: 0.9;
+    }
+    
+    div.trimmed-img {
+       /* overflow: hidden; */
+       height: 80px;
+    }
+    
+    div.trimmed-img img {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    
+}
