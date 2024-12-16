@@ -82,7 +82,6 @@ section.social-media img {
 section.social-media p{
     font-size: 16px;
     font-weight: 300;
-
 }
 
 /* SECTION MANAGE ACCOUNTS */
@@ -300,7 +299,7 @@ section.write-ai img {
         gap: 20px; 
         max-width: 1000px;
         height: calc(100vh - 60px); 
-        /* Subtrai a altura da .attribution */
+        /* Subtract the height from .attribution */
         margin: 0 auto; 
     }
 
@@ -335,25 +334,35 @@ section.write-ai img {
     section.manage-accounts {
         grid-column: 2 / 3; 
         grid-row: 3 / 5; 
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: start;
         overflow: hidden;
+        gap: 10px;
     }
 
     section.posting-schedule {
         grid-column: 3 / 4; 
         grid-row: 3 / 5; 
-        gap: 40px;
+        justify-content: center;
+        align-items: start;
+        overflow: hidden;
+        gap: 10px;
+
     }
 
     section.faster-growth {
         grid-column: 2 / 3;
         grid-row: 5 / 7; 
+        justify-content: space-evenly;
+        align-items: start;
     }
 
     section.schedule {
         grid-column: 4 / 5; 
         grid-row: 1 / 5; 
+        justify-content: center;
+        align-items: start;
+        overflow: hidden;
     }
 
     section.growth {
@@ -362,11 +371,7 @@ section.write-ai img {
         display: flex;
         flex-direction: row;
     }
-
-    img:not(section.manage-accounts img, section.social-media img, section.create-content img, section.write-ai img, div.trimmed-img img ){
-        width: 80%;
-    }
-
+ 
     section.create-content h2 {
         font-size: 36px;
         font-weight: 500;
@@ -392,39 +397,86 @@ section.write-ai img {
     }
     
     section.social-media h1 {
-        font-size: 52px;
+        font-size: 36px;
         font-weight: 500;
         line-height: 1;
         letter-spacing: -0.5px;
-        max-width: 500px;
+        max-width: 300px;
     }
     
     section.social-media img {
-        margin-top: 20px;
-        width: 38%;
-        height: 20%;
-    }
-    
-    section.manage-accounts img {
-        max-width: 276px;
+        margin-top: 10px;
+        width: 30%;
+        height: 30%;
     }
     
     section.manage-accounts h2, section.posting-schedule h2{
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 600;
         letter-spacing: -2px;
         line-height: 0.9;
     }
-    
-    div.trimmed-img {
-       /* overflow: hidden; */
-       height: 80px;
+
+    section.manage-accounts img {
+        max-width: 276px;
+        height: 50px;
     }
     
     div.trimmed-img img {
-        width: 100%;
-        object-fit: cover;
+        width: 95%;
+        object-fit: scale-down;
     }
     
+    section.faster-growth h2{
+        font-size: 44px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+    }
     
+    section.faster-growth p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -0.5px; 
+    }
+
+    section.faster-growth img{
+        max-width: 150px;
+    }
+    
+    section.schedule h2 {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        line-height: 85%;
+    }
+    
+    section.schedule p {
+        text-align: left;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -0.5px; 
+    }
+
+    section.schedule img{
+        object-fit: fill;
+        width: 130%;
+        height: 55%;
+    }
+
+    section.growth h2 {
+        max-width: 200px;
+        text-align: left;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 0.9;
+        letter-spacing: -0.5px; 
+    }
+    
+    section.growth img {
+        width: 95%;
+        height: 95%;
+        object-fit: contain;
+    }
 }
