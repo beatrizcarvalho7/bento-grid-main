@@ -392,6 +392,7 @@ section.write-ai img {
     }
 
     section.write-ai img {
+        object-fit: contain;
         width: 80%;
         height: 60%;
     }
@@ -479,4 +480,8 @@ section.write-ai img {
         height: 95%;
         object-fit: contain;
     }
+
+    /* Laptops/Desktops 1440*/
+    /* Laptops/Desktops 1920*/
+
 }
